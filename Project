@@ -1,0 +1,38 @@
+//chp 37 Collections
+//library functions for working with collections
+//List, Set,Map
+fun main (){
+
+    //val set = listOf(1,2,3,1)
+    val set = setOf(1, 2, 3, 4)
+    println(set)
+    val mSet = mutableSetOf<Int>(1, 2, 3, 4)
+    mSet.add(6)
+    println(mSet)
+
+val list = listOf<Int>(1,2,3,1)
+
+    val mList = mutableListOf<Int>(1,2,3)
+    mList.add(4)
+
+    for (item in list){
+       // println(item)
+    }
+    for (item in mList){
+       // println(item)
+    }
+    println(list)
+    println(mList)
+
+   // val map = mapOf<Int, String>(
+    val mMap = mutableMapOf<Int, String>(
+
+        1 to "One",
+        2 to "Two",
+        Pair (3, "Three")
+   // )
+    )
+    mMap.put(4,"Four")
+   // println(map)
+    println(mMap)
+}
